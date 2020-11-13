@@ -5,8 +5,10 @@ $film = $film ?? null;
 
 @section('content')
 
+    @include('components.form-errors')
+
     <h1>{{$title}}</h1>
-    <form class="form__admin" enctype="multipart/form-data" action="{{ $film ? route('admin.films.update', $film) : route('admin.films.store') }}" method="post">
+    <form class="form__admin" enctype="multipart/form-data" action="{{ $film ? route('films.update', $film) : route('films.store') }}" method="post">
         @csrf
         @if($film) @method('put') @endif
 
@@ -396,7 +398,7 @@ $film = $film ?? null;
             <input class="input__file" type="file" name="image_path" id="image_path" accept="image/*" />
         </div>
 
-        <button>Добавить фильм</button>
+        <button>@if($film) Редактировать @else Добавить фильм @endif</button>
 
     </form>
 @endsection

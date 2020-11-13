@@ -4,7 +4,12 @@
 @section('content')
     <div class="film__show">
         <div>
-            <img src="{{ Storage::url($film->image_path) ? Storage::url($film->image_path) : asset('images/movie.jpg') }}" alt="">
+            @if($film->image_path == null)
+                <img src="{{asset('images/no_image.png') }}" alt="">
+            @else
+                <img src="{{ Storage::url($film->image_path) }}" alt="">
+            @endif
+
             @auth
                 <button id="favorite-button" data-id="{{ $film->id }}">
                     {{ auth()->user()->isFavorite($film) ? 'В избранном' : 'Добавить в избранное' }}
@@ -98,6 +103,9 @@
                 </tr>
 
             </table>
+
         </div>
     </div>
+    <strong>Описание :</strong>
+    <p>{{ $film->description }}</p>
 @endsection

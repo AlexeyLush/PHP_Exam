@@ -4,6 +4,7 @@
 
     <h1>Регистрация</h1>
 
+    @include('components.form-errors')
 
     <form class="form__register" method="post" action="{{ route('register') }}">
         @csrf
