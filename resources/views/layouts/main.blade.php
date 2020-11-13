@@ -8,6 +8,7 @@
     <title>{{ config("app.name") }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="{{ mix('js/app.js') }}"></script>
 </head>
 <body>
     <nav class="navbar">

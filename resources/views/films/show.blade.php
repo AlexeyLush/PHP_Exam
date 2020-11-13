@@ -5,6 +5,12 @@
     <div class="film__show">
         <div>
             <img src="{{ Storage::url($film->image_path) ? Storage::url($film->image_path) : asset('images/movie.jpg') }}" alt="">
+            @auth
+                <button id="favorite-button" data-id="{{ $film->id }}">
+                    {{ auth()->user()->isFavorite($film) ? 'В избранном' : 'Добавить в избранное' }}
+                </button>
+            @endauth
+
         </div>
         <div class="info">
             <table border="1">
@@ -92,10 +98,6 @@
                 </tr>
 
             </table>
-            <strong>Описание</strong>
-            <p>
-                {{ $film->description }}
-            </p>
         </div>
     </div>
 @endsection

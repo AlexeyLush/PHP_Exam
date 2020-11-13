@@ -408,16 +408,33 @@ body{
 
 }
 
-.film__show .description{
-    display: block;
-    max-width: 550px;
-}
-
 .film__show .info table{
     margin-left: 150px;
     border-collapse: collapse;
     border: rgba(0,0,0,0);
     border-bottom: 1px solid rgba(212,211,211,1);
+}
+
+.film__show button{
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    width: 400px;
+    margin-top: 25px;
+    height: 45px;
+    background-color: #c6c651;
+    border: 1px solid #c6c651;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Comfortaa', cursive;
+    transition: .3s;
+}
+
+.film__show button:hover{
+    cursor: pointer;
+    box-shadow: none;
+    color: #d4d3d3;
+    border: 1px solid #d4d3d3;
+    background-color: rgba(0,0,0,0);
+    transition: .3s;
 }
 
 /* Show Film */
