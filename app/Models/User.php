@@ -34,4 +34,14 @@ class User extends Authenticatable
         return $this->email == config('admin.email');
     }
 
+    function favorites(){
+        return $this->belongsToMany(Film::class, Favorite::class);
+    }
+
+    function isFavorite(Film $film){
+        return $this->favorites()
+            ->where('film_id', $film->id)
+            ->exists();
+    }
+
 }

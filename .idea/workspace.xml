@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2157f4f2-5742-4b74-b4b8-4b23acf42b78" name="Default Changelist" comment="Add Main page">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminFilmController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/EnsureUserIsAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/films/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/films/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/films/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/films/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/filmlibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/filmlibrary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="2157f4f2-5742-4b74-b4b8-4b23acf42b78" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/no_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form-errors.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/list-films.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminFilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminFilmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/films/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/films/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/films/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/films/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/films/favorites.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/films/favorites.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/films/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/films/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/films/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/films/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -163,11 +166,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/ru" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\OpenServer\domains\filmlibrary\resources\lang\ru" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\OpenServer\OpenServer\domains\filmlibrary\public\images" />
     </key>
@@ -190,7 +196,7 @@
       <workItem from="1605066877054" duration="320000" />
       <workItem from="1605067242974" duration="10538000" />
       <workItem from="1605099641961" duration="37893000" />
-      <workItem from="1605241967765" duration="3193000" />
+      <workItem from="1605241967765" duration="17635000" />
     </task>
     <task id="LOCAL-00001" summary="Add Main page">
       <created>1605073667176</created>
@@ -199,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605073667176</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit #2">
+      <created>1605245254686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605245254686</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавил избранное">
+      <created>1605249453962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605249453962</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,21 +227,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Main page" />
+    <MESSAGE value="Commit #2" />
+    <MESSAGE value="Добавил избранное" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил избранное" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1032" y="396" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605022317232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="396" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605022317232" />
-    <state x="971" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605190606664">
+    <state x="971" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605246250368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="971" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605190606664" />
-    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1605162474752">
+    <state x="971" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605246250368" />
+    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1605249452239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605162474752" />
+    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605249452239" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1605073575657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -230,14 +252,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="658" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605186118216" />
-    <state x="1136" y="572" key="NewPhpFileDialog" timestamp="1605178745602">
+    <state x="1136" y="572" key="NewPhpFileDialog" timestamp="1605257222852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1136" y="572" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605178745602" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605073753258">
+    <state x="1136" y="572" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605257222852" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605249486364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605073753258" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605249486364" />
     <state x="864" y="337" key="run.anything.popup" timestamp="1605188043014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

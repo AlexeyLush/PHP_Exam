@@ -4,18 +4,19 @@
 
     <h1>Вход</h1>
 
+    @include('components.form-errors')
 
-    <form method="post" action="{{ route('login') }}">
+    <form class="login__register" method="post" action="{{ route('login') }}">
         @csrf
 
         <div>
             <label for="email">Email</label>
-            <input value="{{ old('email') }}" type="email" id="email" name="email" placeholder="someone@example.com">
+            <input class="input__text"  value="{{ old('email') }}" type="email" id="email" name="email" placeholder="someone@example.com">
         </div>
 
         <div>
             <label for="password">Пароль</label>
-            <input type="password" id="password" name="password">
+            <input class="input__text"  type="password" id="password" name="password">
         </div>
 
         <div>

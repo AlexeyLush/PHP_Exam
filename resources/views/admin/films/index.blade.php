@@ -42,11 +42,11 @@ $counter = 0
                         <th>{{ $film->rating }}</th>
                         <th>
 
-                            <a href="{{ route('admin.films.edit', $film) }}">Редактировать</a>
+                            <a href="{{ route('films.edit', $film) }}">Редактировать</a>
                             <a href="#" onclick="event.preventDefault(); document.getElementById('delete-form').submit();">
                                 @csrf @method('delete')
                                 Удалить</a>
-                            <form id="delete-form" action="{{ route('admin.films.destroy', $film) }}" method="post">
+                            <form id="delete-form" action="{{ route('films.destroy', $film) }}" method="post">
                                 @csrf @method('delete')
                             </form>
                         </th>

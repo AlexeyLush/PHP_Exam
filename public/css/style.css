@@ -5,6 +5,7 @@ body{
     color: #d7d7d7;
 }
 
+
 .container{
     margin: 0 260px;
 }
@@ -67,8 +68,33 @@ body{
     margin: 0 10px;
 }
 
+.navbar .auth button{
+    font-family: 'Comfortaa', cursive;
+    margin-left: 20px;
+    background-color: #ac4343;
+    border: 1px solid #ac4343;
+    color: white;
+    outline: none;
+    width: 100px;
+    height: 20px;
+    transition: .3s;
+}
+
+.navbar .auth button:hover{
+    cursor: pointer;
+    color: #ac4343;
+    width: 120px;
+    height: 25px;
+    transition: .3s;
+    background-color: rgba(0,0,0,0);
+}
+
 .navbar .menu__adapt{
     display: none;
+}
+
+.navbar .username{
+    color: black;
 }
 
 /* Navigation Panel */
@@ -182,7 +208,10 @@ body{
 
 .form__admin .input__text:focus{
     border-bottom: 2px solid yellow;
+    background: rgba(0,0,0,0);
 }
+
+
 
 .form__admin select{
     margin-top: 30px;
@@ -321,11 +350,58 @@ body{
 /* Register */
 
 
+/* Login */
+
+.login__register label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.login__register  .input__text{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    outline: none;
+    font-size: 20px;
+    width: 35%;
+    color: #d4d3d3;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    border-bottom: 1px solid #d4d3d3;
+    background-color: rgba(0,0,0,0);
+}
+
+
+.login__register button{
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: #d4d3d3;
+    color: black;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    border: 1px solid #d4d3d3;
+    width: 350px;
+    height: 50px;
+    transition: .3s;
+}
+
+.login__register button:hover{
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    transition: .3s;
+}
+
+/* Login */
+
 
 .list__films{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -335,7 +411,7 @@ body{
 
 
 .card__film{
-    margin: 0 50px;
+    margin: 10px 50px;
     width: 280px;
     height: 400px;
     box-shadow: 0 0 50px rgba(0,0,0,0.7);
@@ -389,8 +465,9 @@ body{
 /* Show Film */
 
 .film__show{
-    margin: 40px;
+    margin-top: 40px;
     display: flex;
+    margin-bottom: 50px;
 }
 
 .film__show img{
@@ -408,16 +485,33 @@ body{
 
 }
 
-.film__show .description{
-    display: block;
-    max-width: 550px;
-}
-
 .film__show .info table{
     margin-left: 150px;
     border-collapse: collapse;
     border: rgba(0,0,0,0);
     border-bottom: 1px solid rgba(212,211,211,1);
+}
+
+.film__show button{
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    width: 400px;
+    margin-top: 25px;
+    height: 45px;
+    background-color: #c6c651;
+    border: 1px solid #c6c651;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Comfortaa', cursive;
+    transition: .3s;
+}
+
+.film__show button:hover{
+    cursor: pointer;
+    box-shadow: none;
+    color: #d4d3d3;
+    border: 1px solid #d4d3d3;
+    background-color: rgba(0,0,0,0);
+    transition: .3s;
 }
 
 /* Show Film */

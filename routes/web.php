@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\FilmController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,25 @@ Route::get('/', function () {
     }
     return view('index');
 })->name('index');
+
+
+Route::middleware('auth')
+    ->group(function () {
+        // Тут проверка на авторизацию
+
+        Route::resource('films', FilmController::class)
+            ->except('index', 'show');
+
+        Route::prefix('films/{film}')
+            ->group(function () {
+                Route::put('favorite', [FavoriteController::class, 'toggle']);
+
+            });
+
+        Route::get('favorites', [FavoriteController::class, 'index'])
+            ->name('user.favorites');
+
+    });
 
 
 
