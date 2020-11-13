@@ -12,12 +12,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container container">
-            <a href="">
+            <a href="{{ route('index') }}">
                 <h2>Фильмотека</h2>
             </a>
             <ul>
                 <li>
-                    <a href="">Каталог</a>
+                    <a href="{{ route('films.index') }}">Каталог</a>
                 </li>
                 <li>
                     <a href="">ХИТЫ</a>
@@ -26,9 +26,18 @@
                     <a href="">Новое</a>
                 </li>
             </ul>
+
             <div class="auth">
-                <a href="">Войти</a>
-                <a href="">Регистрация</a>
+                @if (auth()->check())
+                    {{ auth()->user()->name }}
+                    <form method="post" action="{{ route('logout') }}"> @csrf
+                        <button>Выйти</button>
+                    </form>
+
+                @else
+                    <a href="{{ route('login') }}">Войти</a>
+                    <a href="{{ route('register') }}">Регистрация</a>
+                @endif
             </div>
         </div>
     </nav>

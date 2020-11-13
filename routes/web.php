@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FilmController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    if (auth()->user()){
+        return redirect()->route('films.index');
+    }
     return view('index');
-});
+})->name('index');
+
+
+
+Route::resource('films', FilmController::class);
